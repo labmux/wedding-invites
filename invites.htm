@@ -1,0 +1,29 @@
+<!Doctype>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+    <div ng-app="myApp" ng-controller="myController">
+    
+    <p>Name: <input type="text" placeholder="Enter name here" ng-		       model="name">
+    <button ng-click="addName()">Add me</button>
+    </p>
+    
+    <ul>
+    	<li ng-repeat="x in nameList">{{x}}</li>
+    </ul>
+    
+        
+    </div>
+    
+    <script>
+    var app = angular.module('myApp', []);
+    app.controller('myController', function($scope) {
+        $scope.nameList = ["ye"];
+        $scope.addName = function() {
+        $scope.nameList.push(scope.name);
+        }
+        
+    });
+    </script>
+</body>
+</html>
