@@ -4,7 +4,7 @@
 <body>
     <div ng-app="myApp" ng-controller="myController">
     
-    <p>Name: <input type="text" placeholder="Enter name here" ng-		       model="name">
+    <p>Name: <input type="text" placeholder="Enter name here" ng-model="name">
     <button ng-click="addName()">Add me</button>
     </p>
     
@@ -12,18 +12,17 @@
     	<li ng-repeat="x in nameList">{{x}}</li>
     </ul>
     
-        
-    </div>
+   </div>
     
     <script>
     var app = angular.module('myApp', []);
     app.controller('myController', function($scope) {
         $scope.nameList = ["ye"];
         $scope.addName = function() {
-        $scope.nameList.push(scope.name);
+        $scope.nameList.push($scope.name);
         }
-        
     });
     </script>
+    
 </body>
 </html>
