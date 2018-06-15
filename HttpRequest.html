@@ -1,23 +1,37 @@
+<!DOCTYPE html>
 <html>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-<body>
 
-    
+   
 <script>
-var app = angular.module('App', []);
-app.controller('Controller', function($scope, $http) {
-    $http.get("test.htm").then(function(response) {
+var app = angular.module('myApp', []);
+app.controller('myController', function($scope, $http) {
+    $scope.list = ["ye"];
+    $scope.load = function () 
+    {
+        $scope.list.push($scope.name);
+        $http.put("test.htm", $scope.list);
+    };
+    
+    $http.get('test.htm', function(response) {
         $scope.list = response.data;
-        $scope.list += "CRAAAZYY";
-        $scope.list += $scope.name + " ";
     });
+//        $scope.list = response.data;
+//        $scope.list += "CRAAAZYY";
+//    });
 });
 </script>
     
-
-
+<div ng-app="myApp" ng-controller="myController">
     
+<h1>Http request</h1>
+    Enter name: 
+    <input type="text" 
+           placeholder="Enter name here"
+           ng-model="name">
+    <button ng-click="load()">Click to add name to list</button>
+<p>{{list}}</p>
 
+</div>
 
-</body>
 </html>

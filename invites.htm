@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html>
+<head>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-<body>
-    
-    <script type="text/javascript" src="HttpRequest.js"></script>
-    
-    <script>
+<script>
     var app = angular.module('myApp', []);
     app.controller('myController', function($scope) {
         $scope.nameList = ["ye"];
         $scope.addName = function() {
             $scope.errortext = "";
             if(!$scope.name) {return;}
-            if($scope.nameList.indexOf($scope.name) == -1) {
+            if($scope.nameList.indexOf($scope.name) == -1) 
+            {
                $scope.nameList.push($scope.name); 
             }
             else
-                $scope.errortext = "Error: This name is already in the list"
+            {
+                $scope.errortext = "Error: This name is already in the list";
+            }
         }
         $scope.removeName = function(x) {
             $scope.errortext = "";
             $scope.nameList.splice(x,1);
         }
     });
-        
+    </script> 
+</head>
+<body>
 <div ng-app="myApp">
-    
 <div ng-controller="myController">
     <p>
     Name: <input placeholder="Enter name here" ng-model="name">
@@ -39,9 +40,5 @@
     <p>{{errortext}}</p>
 </div>
     </div>
-
-<p id="demo">ah </p>
-
-    
 </body>
 </html>
