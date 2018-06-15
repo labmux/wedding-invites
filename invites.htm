@@ -1,7 +1,10 @@
-<!Doctype>
+<!DOCTYPE html>
 <html>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <body>
+    
+    <script type="text/javascript" src="HttpRequest.js"></script>
+    
     <script>
     var app = angular.module('myApp', []);
     app.controller('myController', function($scope) {
@@ -13,16 +16,17 @@
                $scope.nameList.push($scope.name); 
             }
             else
-                $scope.errortext = "This name is already in the list"
+                $scope.errortext = "Error: This name is already in the list"
         }
         $scope.removeName = function(x) {
             $scope.errortext = "";
             $scope.nameList.splice(x,1);
         }
     });
-    </script>
+        
+<div ng-app="myApp">
     
-<div ng-app="myApp" ng-controller="myController">
+<div ng-controller="myController">
     <p>
     Name: <input placeholder="Enter name here" ng-model="name">
     <button ng-click="addName()">Add me</button>
@@ -32,7 +36,12 @@
           {{x}} <span ng-click="removeName($index)">x</span>
         </li>
     </ul>
-    <p>Error: {{errortext}}</p>
+    <p>{{errortext}}</p>
 </div>
+    </div>
+
+<p id="demo">ah </p>
+
+    
 </body>
 </html>
