@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.js"></script>
+        <script>
+        var app = angular.module('myApp', []);
+        app.controller('myController', function($scope, $http) {
+            $scope.resp = "";
+            $scope.name = "";
+            $scope.addName = function()
+            {
+                $http({
+                    method: 'POST',
+                    url: 'testing.php',
+                    data: 'list=' + JSON.stringify($scope.name),
+                    headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+                }).then(function success(response) {
+                        $scope.resp = response.data;
+                    },
+                    function error(response) {
+                        $scope.resp = response.statusText;
+                    });
+            };
+        });
+        </script>
+    </head>
+    <body>
+
+    <div ng-app="myApp" ng-controller="myController">
+        <h1>Http request</h1>
+        Enter your full name here:
+        <input type="text"
+               placeholder="Enter name here"
+               ng-model="name">
+        <button ng-click="addName()" >Click to add name to list</button>
+        <p> List: {{list}}</p>
+        <p>Response: {{resp}}</p>
+
+    </div>
+   </body>
+
+</html>

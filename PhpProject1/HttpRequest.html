@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script>
+var app = angular.module('myApp', []);
+app.controller('myController', function($scope, $resource) {
+    $scope.msg = "unitialized";
+    var list = ["ye"];
+    
+    
+    $scope.add = function () 
+    {
+        list.push($scope.name);
+        $scope.namelist = list;  
+        var myList = {
+            names: list
+        };
+        console.log(myList);
+        $scope.jasonJile = JSON.stringify(myList);
+        
+        
+        
+        //HTTP request
+        $scope.names = {};
+        $scope.names.someData = 'some data';
+        
+        var names = new Names($scope.names);
+        names.$update();
+        
+//        $http.post('test.php', myList, {headers:{'Content-Type': 'application/json'}}).then(
+//        function success(response) {
+//            $scope.msg = "Post data submitted";
+//            $scope.data = response.data;
+//            $scope.status = response.status;
+//            $scope.statustext = response.statustext;
+//            $scope.headers = response.headers();
+//            }, 
+//        function error(response) {
+//            $scope.data = response.data;
+//            $scope.msg = "Service failed";
+//            $scope.status = response.status;
+//            $scope.statustext = response.statustext;
+//            $scope.headers = response.headers();
+//        });
+    };
+});
+    app.factory("Name", function($resource) {
+        return $resource('test.php', {}, {
+            get : {method: "GET", params: nameId: '-1'},
+            update: {method: "POST"}
+        });
+    });
+    
+</script>
+</head>   
+<body>
+
+
+    
+<div ng-app="myApp" ng-controller="myController">
+    <!--Request input-->
+    <div>
+   <h1>Http request</h1>
+    Enter name: 
+    <input type="text" 
+           placeholder="Enter name here"
+           ng-model="name">
+    <button ng-click="add()">Click to add name to list</button>
+    </div>
+    <!--Run tests-->
+    <p>Name: {{name}}</p>
+    <p>List: {{namelist}}</p>
+    <p>Data: {{data}}</p>
+    <p>Json file: {{jsonFile}}</p>
+    <p>Output message: {{msg}}</p>
+    <p>Status Code: {{status}}</p>
+    <p>Status: {{statustext}}</p>
+    <p>Response Headers: {{headers}}</p>
+</div>
+</body>
+</html>
