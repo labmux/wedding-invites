@@ -11,33 +11,58 @@ and open the template in the editor.
         var app = angular.module('myApp', []);
         app.controller('myController', function($scope, $http) {
             $scope.resp = "";
-            $scope.name = "";
+            $scope.name = [""];
+            $scope.list = [""];
             $scope.addName = function()
             {
-                $http({
-                    method: 'POST',
-                    url: 'testing.php',
-                    data: 'list=' + JSON.stringify($scope.name),
-                    headers: {'Content-Type': 'application/x-www-form-urlencoded'}
-                }).then(function success(response) {
-                        $scope.resp = response.data;
-                    },
-                    function error(response) {
-                        $scope.resp = response.statusText;
-                    });
-            };
+                if($scope.name.length == $scope.number)
+                {
+                    $http({
+                        method: 'POST',
+                        url: 'testing.php',
+                        data: 'list=' + JSON.stringify($scope.name),
+                        headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+                    }).then(function success(response) {
+                            $scope.resp = response.data;
+                        },
+                        function error(response) {
+                            $scope.resp = response.statusText;
+                        });
+                }
+                else if($scope.name.length < $scope.number)
+                    document.body.innerHTML = "Error 101: <br> Not all fields have been initialized"
+                else
+                {
+                    document.body.innerHTML = "Error: 102  <br> Make sure unused submission area has been cleared";
+                }
+             };
+            $scope.Num = function ()
+            {
+                return new Array($scope.number);
+
+            }
+
         });
         </script>
-    </head>
-    <body>
+        <h1>Wedding RSVP</h1>
+     </head>
 
+    <body>
     <div ng-app="myApp" ng-controller="myController">
-        <h1>Http request</h1>
-        Enter your full name here:
-        <input type="text"
-               placeholder="Enter name here"
-               ng-model="name">
-        <button ng-click="addName()" >Click to add name to list</button>
+        <p>How many people are coming?</p>
+        <input type="number"
+               placeholder="Enter total number of people coming"
+               ng-model="number">
+
+        <div ng-repeat="x in Num() track by $index">
+            <p>Enter your full name here:</p>
+            <input type="text"
+                   placeholder="Enter name here"
+                   ng-model="name[$index]">
+        </div>
+        <button ng-click="addName()" ng-if="name.length" >Click to add name to list</button>
+        {{name}}
+    <!-- Tests for dev -->
         <p> List: {{list}}</p>
         <p>Response: {{resp}}</p>
 
