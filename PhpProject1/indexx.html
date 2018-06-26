@@ -6,6 +6,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.js"></script>
         <script>
         var app = angular.module('myApp', []);
@@ -62,22 +63,32 @@ and open the template in the editor.
 
     <body>
     <div ng-app="myApp" ng-controller="myController">
-        <p>How many people are coming?</p>
+        <p>What is the total amount of people coming?</p>
         <input type="number"
-               placeholder="Enter total number of people coming"
+               placeholder="Select number"
                ng-model="number">
 
-        <p>Enter full name here:</p>
+        <p>Enter full name(s):</p>
         <div ng-repeat="x in num() track by $index">
 
             <input type="text"
                    placeholder="Enter name here"
                    ng-model="name[$index]">
-            <span ng-click="removeName($index)">x</span>
+            <span class="w3-padding-16"
+                  class="w3-right w3-margin-right"
+                  style="cursor: pointer;"
+                  ng-click="removeName($index)">x</span>
         </div>
         <p></p>
-        <button ng-click="addName()" ng-if="name.length" >Click to add name to list</button>
-        <button ng-click="reset()">Reset</button>
+        <button ng-click="addName()"
+                ng-if="name.length"
+                class="w3-btn w3-padding w3-green">
+            Add names</button>
+
+        <button ng-click="reset()"
+                class="w3-btn w3-padding w3-red">
+            Reset</button>
+
        <p>{{name}}</p>
         <p style="color: red">{{errormsg}}</p>
     <!-- Tests for dev -->
