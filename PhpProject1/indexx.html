@@ -64,6 +64,7 @@ and open the template in the editor.
     <body>
     <div ng-app="myApp" ng-controller="myController">
         <p>What is the total amount of people coming?</p>
+
         <input type="number"
                placeholder="Select number"
                ng-model="number">
@@ -79,6 +80,7 @@ and open the template in the editor.
                   style="cursor: pointer;"
                   ng-click="removeName($index)">x</span>
         </div>
+
         <p></p>
         <button ng-click="addName()"
                 ng-if="name.length"
