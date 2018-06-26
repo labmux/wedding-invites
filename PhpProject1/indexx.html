@@ -64,14 +64,12 @@ and open the template in the editor.
     <body>
     <div ng-app="myApp" ng-controller="myController">
         <p>What is the total amount of people coming?</p>
-
         <input type="number"
                placeholder="Select number"
                ng-model="number">
 
         <p>Enter full name(s):</p>
         <div ng-repeat="x in num() track by $index">
-
             <input type="text"
                    placeholder="Enter name here"
                    ng-model="name[$index]">
@@ -82,6 +80,7 @@ and open the template in the editor.
         </div>
 
         <p></p>
+
         <button ng-click="addName()"
                 ng-if="name.length"
                 class="w3-btn w3-padding w3-green">
@@ -91,9 +90,10 @@ and open the template in the editor.
                 class="w3-btn w3-padding w3-red">
             Reset</button>
 
-       <p>{{name}}</p>
         <p style="color: red">{{errormsg}}</p>
-    <!-- Tests for dev -->
+
+        <!-- Tests for dev -->
+        <p>{{name}}</p>
         <p> List: {{list}}</p>
         <p>Response: {{resp}}</p>
 
