@@ -13,6 +13,7 @@ and open the template in the editor.
             $scope.resp = "";
             $scope.name = [""];
             $scope.list = [""];
+            $scope.errormsg = "";
             $scope.addName = function()
             {
                 if($scope.name.length == $scope.number)
@@ -28,19 +29,31 @@ and open the template in the editor.
                         function error(response) {
                             $scope.resp = response.statusText;
                         });
+                    $scope.errormsg = "Added names succesfully";
                 }
                 else if($scope.name.length < $scope.number)
-                    document.body.innerHTML = "Error 101: <br> Not all fields have been initialized"
+                    $scope.errormsg = "Error 101: \n Not all fields have been initialized";
+
                 else
                 {
-                    document.body.innerHTML = "Error: 102  <br> Make sure unused submission area has been cleared";
+                    $scope.errormsg = "Error: 102  \n Make sure unused submission area has been cleared";
                 }
              };
-            $scope.Num = function ()
+            $scope.num = function ()
             {
                 return new Array($scope.number);
 
             }
+            $scope.removeName = function(x)
+            {
+                $scope.name.splice(x,1);
+                $scope.number--;
+             }
+             $scope.reset = function()
+             {
+                 $scope.name = angular.copy($scope.list);
+                 $scope.number = 0;
+             }
 
         });
         </script>
@@ -54,14 +67,19 @@ and open the template in the editor.
                placeholder="Enter total number of people coming"
                ng-model="number">
 
-        <div ng-repeat="x in Num() track by $index">
-            <p>Enter your full name here:</p>
+        <p>Enter full name here:</p>
+        <div ng-repeat="x in num() track by $index">
+
             <input type="text"
                    placeholder="Enter name here"
                    ng-model="name[$index]">
+            <span ng-click="removeName($index)">x</span>
         </div>
+        <p></p>
         <button ng-click="addName()" ng-if="name.length" >Click to add name to list</button>
-        {{name}}
+        <button ng-click="reset()">Reset</button>
+       <p>{{name}}</p>
+        <p style="color: red">{{errormsg}}</p>
     <!-- Tests for dev -->
         <p> List: {{list}}</p>
         <p>Response: {{resp}}</p>
