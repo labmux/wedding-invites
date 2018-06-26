@@ -16,7 +16,7 @@ and open the template in the editor.
             $scope.errormsg = "";
             $scope.addName = function()
             {
-                if($scope.name.length == $scope.number)
+                if($scope.name.length == $scope.number && $scope.name[0] != "")
                 {
                     $http({
                         method: 'POST',
@@ -31,13 +31,13 @@ and open the template in the editor.
                         });
                     $scope.errormsg = "Added names succesfully";
                 }
-                else if($scope.name.length < $scope.number)
+                else if($scope.name.length < $scope.number || $scope.name[0] == "")
                     $scope.errormsg = "Error 101: \n Not all fields have been initialized";
-
+                else if($scope.number <= 0)
+                    $scope.errormsg = "Error 102: Make sure fields have been initialized";
                 else
-                {
-                    $scope.errormsg = "Error: 102  \n Make sure unused submission area has been cleared";
-                }
+                    $scope.errormsg = "Error 103:  \n Make sure unused submission area has been cleared";
+
              };
             $scope.num = function ()
             {
