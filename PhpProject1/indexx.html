@@ -22,7 +22,7 @@ and open the template in the editor.
                     $http({
                         method: 'POST',
                         url: 'testing.php',
-                        data: 'list=' + JSON.stringify($scope.name),
+                        data: 'list=' + $scope.name,
                         headers: {'Content-Type': 'application/x-www-form-urlencoded'}
                     }).then(function success(response) {
                             $scope.resp = response.data;
