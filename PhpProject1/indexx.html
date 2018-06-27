@@ -17,7 +17,7 @@ and open the template in the editor.
             $scope.errormsg = "";
             $scope.addName = function()
             {
-                if($scope.name.length == $scope.number && $scope.name[0] != "")
+                if($scope.name.length == $scope.number && $scope.hasEmpty() == false)
                 {
                     $http({
                         method: 'POST',
@@ -26,18 +26,20 @@ and open the template in the editor.
                         headers: {'Content-Type': 'application/x-www-form-urlencoded'}
                     }).then(function success(response) {
                             $scope.resp = response.data;
+                            $scope.errormsg = "Added names succesfully";
+
                         },
                         function error(response) {
                             $scope.resp = response.statusText;
+                            $scope.errormsg = "Something went wrong:" + response.statusText;
                         });
-                    $scope.errormsg = "Added names succesfully";
                 }
-                else if($scope.name.length < $scope.number || $scope.name[0] == "")
-                    $scope.errormsg = "Error 101: \n Not all fields have been initialized";
+                else if($scope.name.length < $scope.number || $scope.hasEmpty() == true)
+                    $scope.errormsg = "Error 101: Not all fields have been initialized";
                 else if($scope.number <= 0)
                     $scope.errormsg = "Error 102: Make sure fields have been initialized";
                 else
-                    $scope.errormsg = "Error 103:  \n Make sure unused submission area has been cleared";
+                    $scope.errormsg = "Error 103: Make sure unused submission areas have been cleared";
 
              };
             $scope.num = function ()
@@ -53,7 +55,17 @@ and open the template in the editor.
              $scope.reset = function()
              {
                  $scope.name = angular.copy($scope.list);
-                 $scope.number = 0;
+                 $scope.number = 1;
+                 $scope.errormsg = "";
+             }
+             $scope.hasEmpty = function()
+             {
+                 for (var i = 0; i < $scope.name.length; i++)
+                 {
+                     if($scope.name[i] == "" || $scope.name[i] == null)
+                         return true;
+                 }
+                 return false;
              }
 
         });
