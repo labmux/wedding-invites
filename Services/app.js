@@ -16,10 +16,11 @@ routerApp.config(function ($stateProvider, $urlRouterProvider) {
             controller: 'myController'
           })
         .state('login', {
-            url: '/login',
-            templateUrl: 'login.html',
+            url: '/loginpage',
+            templateUrl: 'loginpage/login.html',
             controller: 'loginctrl'
-        });
+        })
+
 });
 
 routerApp.controller('loginctrl', ['$scope', function($scope) {
