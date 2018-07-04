@@ -56,7 +56,7 @@ routerApp.controller('homectrl', function($scope, $http) {
     {
         for (var i = 0; i < $scope.namelist.length; i++)
         {
-            if($scope.namelist[i].name == "" || $scope.namelist[i].name == null ||
+            if($scope.namelist[i].name == "" || $scope.namelist[i].name === undefined ||
                 $scope.namelist[i] == null)
                 return true;
         }
