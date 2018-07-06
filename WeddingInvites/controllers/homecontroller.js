@@ -1,4 +1,3 @@
-
 routerApp.controller('homectrl', function($scope, $http) {
     $scope.resp = "";
     $scope.namelist = [""];

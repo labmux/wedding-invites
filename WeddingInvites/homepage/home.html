@@ -1,16 +1,25 @@
-<h1>Wedding RSVP</h1>
-<div ng-app="myApp" ng-controller="homectrl">
+<!--<h1>Wedding RSVP</h1>-->
+<div>
+    <menu-name title="Wedding RSVP"></menu-name>
+</div>
+<div ng-app="routerApp">
+        <!-- NUMBER OF PEOPLE -->
         <p>What is the total amount of people coming?</p>
         <input type="number"
                placeholder="Select number"
                ng-model="number">
-        <p><br></p>
+
+        <add-space></add-space>
+
+        <!-- PEOPLES NAMES -->
         <p>Enter full name(s)</p>
         <p>(Check checkbox if its a child)</p>
+
         <div ng-repeat="x in num() track by $index">
             <input type="text"
                    placeholder="Enter name here"
                    ng-model="namelist[$index].name">
+
             <input type="checkbox"
                    ng-model="namelist[$index].ischild">
 
@@ -24,7 +33,7 @@
 
         <!-- Add namelist & Reset buttons -->
          <button ng-click="addName()"
-                ng-if="namelist.length"
+                ng-hide="number<1"
                 class="w3-btn w3-padding w3-green">
             Add names</button>
 
@@ -40,4 +49,4 @@
         <p> List: {{list}}</p>
         <p>Response: {{resp}}</p>
 
-    </div>
+</div>

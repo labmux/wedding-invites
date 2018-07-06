@@ -13,38 +13,43 @@
     <splitter split-orientation="horizontal" split-proportion="0.50833994">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/index.html">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/../WeddingInvites/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+                <state relative-caret-position="285">
+                  <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
                 </state>
               </provider>
             </entry>
           </file>
           <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/homepage/home.html">
+            <entry file="file://$PROJECT_DIR$/../WeddingInvites/homepage/home.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="8" column="46" lean-forward="true" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+                <state relative-caret-position="30">
+                  <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="homecontroller.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/controllers/homecontroller.js">
+          <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../WeddingInvites/loginpage/login.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="621">
-                  <caret line="58" column="74" lean-forward="true" selection-start-line="58" selection-start-column="74" selection-end-line="58" selection-end-column="74" />
+                <state>
+                  <caret column="25" selection-start-column="25" selection-end-column="25" />
                 </state>
               </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="homecontroller.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../WeddingInvites/controllers/homecontroller.js">
+              <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
           <file leaf-file-name="uploadList.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/homepage/uploadList.php">
+            <entry file="file://$PROJECT_DIR$/../WeddingInvites/homepage/uploadList.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+                <state relative-caret-position="195">
+                  <caret line="13" column="9" selection-start-line="13" selection-end-line="14" />
                 </state>
               </provider>
             </entry>
@@ -53,29 +58,29 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="directives.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/../WeddingInvites/directives.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="180">
+                  <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app.js">
+            <entry file="file://$PROJECT_DIR$/../WeddingInvites/app.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="28" selection-start-line="28" selection-end-line="28" />
+                <state relative-caret-position="345">
+                  <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/loginpage/login.html">
+          <file leaf-file-name="testfile.txt" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../WeddingInvites/homepage/testfile.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="testfile.txt" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/homepage/testfile.txt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+                <state relative-caret-position="270">
+                  <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
                 </state>
               </provider>
             </entry>
@@ -110,16 +115,17 @@
         <option value="$PROJECT_DIR$/admin.html" />
         <option value="$PROJECT_DIR$/login.html" />
         <option value="$PROJECT_DIR$/congrats.html" />
-        <option value="$PROJECT_DIR$/loginpage/login.html" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/homepage/rsvp.html" />
-        <option value="$PROJECT_DIR$/homepage/home.html" />
         <option value="$PROJECT_DIR$/homepage/testing.php" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/../../bin/php/php7.2.1/conf/php.ini" />
         <option value="$PROJECT_DIR$/homepage/testfile.txt" />
         <option value="$PROJECT_DIR$/homepage/uploadList.php" />
         <option value="$PROJECT_DIR$/controllers/homecontroller.js" />
+        <option value="$PROJECT_DIR$/directives.js" />
+        <option value="$PROJECT_DIR$/homepage/home.html" />
+        <option value="$PROJECT_DIR$/loginpage/login.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -143,9 +149,10 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="1440" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -156,16 +163,11 @@
         <subPane>
           <expand>
             <path>
-              <item name="Services" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Services" type="462c0819:PsiDirectoryNode" />
+              <item name="WeddingInvites" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WeddingInvites" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Services" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Services" type="462c0819:PsiDirectoryNode" />
-              <item name="homepage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Services" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WeddingInvites" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
             </path>
           </expand>
@@ -211,18 +213,18 @@
       <workItem from="1530419252884" duration="509000" />
       <workItem from="1530623186637" duration="727000" />
       <workItem from="1530624180064" duration="12655000" />
-      <workItem from="1530707883691" duration="11320000" />
+      <workItem from="1530707883691" duration="23782000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39969000" />
+    <option name="totallyTimeSpent" value="52431000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="1440" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.125" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09375" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -251,159 +253,159 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/../WeddingInvites/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homepage/home.html">
+    <entry file="file://$PROJECT_DIR$/../WeddingInvites/homepage/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
           <caret line="38" column="27" lean-forward="true" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/homecontroller.js">
+    <entry file="file://$PROJECT_DIR$/../WeddingInvites/controllers/homecontroller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="48" lean-forward="true" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/../WeddingInvites/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/loginpage/login.html">
+    <entry file="file://$PROJECT_DIR$/../WeddingInvites/loginpage/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homepage/testfile.txt">
+    <entry file="file://$PROJECT_DIR$/../WeddingInvites/homepage/testfile.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homepage/uploadList.php">
+    <entry file="file://$PROJECT_DIR$/../WeddingInvites/homepage/uploadList.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homepage/home.html">
+    <entry file="file://$PROJECT_DIR$/../WeddingInvites/homepage/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="12" selection-start-line="27" selection-start-column="16" selection-end-line="31" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/../WeddingInvites/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/../WeddingInvites/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="19" selection-start-line="19" selection-end-line="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homepage/uploadList.php">
+    <entry file="file://$PROJECT_DIR$/../WeddingInvites/homepage/uploadList.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/loginpage/login.html">
+    <entry file="file://$PROJECT_DIR$/../WeddingInvites/loginpage/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="29" column="6" lean-forward="true" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homepage/testfile.txt">
+    <entry file="file://$PROJECT_DIR$/../WeddingInvites/homepage/testfile.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html" />
-    <entry file="file://$PROJECT_DIR$/homepage/home.html">
+    <entry file="file://$PROJECT_DIR$/../WeddingInvites/index.html" />
+    <entry file="file://$PROJECT_DIR$/../WeddingInvites/homepage/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/../WeddingInvites/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homepage/uploadList.php">
+    <entry file="file://$PROJECT_DIR$/../WeddingInvites/homepage/uploadList.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homepage/testfile.txt">
+    <entry file="file://$PROJECT_DIR$/../WeddingInvites/homepage/testfile.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/loginpage/login.html">
+    <entry file="file://$PROJECT_DIR$/../WeddingInvites/loginpage/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="29" column="6" lean-forward="true" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html" />
-    <entry file="file://$PROJECT_DIR$/homepage/home.html">
+    <entry file="file://$PROJECT_DIR$/../WeddingInvites/index.html" />
+    <entry file="file://$PROJECT_DIR$/../WeddingInvites/homepage/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/../WeddingInvites/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homepage/uploadList.php">
+    <entry file="file://$PROJECT_DIR$/../WeddingInvites/homepage/uploadList.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/loginpage/login.html">
+    <entry file="file://$PROJECT_DIR$/../WeddingInvites/loginpage/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="29" column="6" lean-forward="true" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homepage/testfile.txt">
+    <entry file="file://$PROJECT_DIR$/../WeddingInvites/homepage/testfile.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
@@ -418,21 +420,14 @@
     <entry file="file://$PROJECT_DIR$/app/index.html" />
     <entry file="file://$PROJECT_DIR$/app/index-async.html" />
     <entry file="file://$PROJECT_DIR$/app/view1/view1.html" />
-    <entry file="file://$PROJECT_DIR$/index.html" />
+    <entry file="file://$PROJECT_DIR$/../WeddingInvites/index.html" />
     <entry file="file://$PROJECT_DIR$/home.html" />
-    <entry file="file://$PROJECT_DIR$/homepage/home.html">
+    <entry file="file://$PROJECT_DIR$/../WeddingInvites/homepage/home.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/login.html" />
     <entry file="file://$PROJECT_DIR$/congrats.html" />
-    <entry file="file://$PROJECT_DIR$/index.html" />
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../WeddingInvites/index.html" />
     <entry file="file://$PROJECT_DIR$/../../bin/php/php7.2.1/conf/php.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7245">
@@ -440,45 +435,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/loginpage/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/homepage/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="46" lean-forward="true" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/homepage/uploadList.php">
+    <entry file="file://$PROJECT_DIR$/../WeddingInvites/homepage/testfile.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homepage/testfile.txt">
+    <entry file="file://$PROJECT_DIR$/../WeddingInvites/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="345">
+          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/homecontroller.js">
+    <entry file="file://$PROJECT_DIR$/../WeddingInvites/directives.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="58" column="74" lean-forward="true" selection-start-line="58" selection-start-column="74" selection-end-line="58" selection-end-column="74" />
+        <state relative-caret-position="180">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../WeddingInvites/homepage/uploadList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="9" selection-start-line="13" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../WeddingInvites/controllers/homecontroller.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../WeddingInvites/loginpage/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="25" selection-start-column="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../WeddingInvites/homepage/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../WeddingInvites/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
         </state>
       </provider>
     </entry>
