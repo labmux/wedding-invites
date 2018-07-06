@@ -60,3 +60,10 @@ nnn,1
 re,1
 re,0
 gre,1
+lknkl,0
+kjjjjjj,1
+lknkl,0
+kjjjjjj jjjjjj,1
+jkh,0
+j,1
+kj,0

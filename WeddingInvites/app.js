@@ -20,9 +20,15 @@ routerApp.config(function ($stateProvider, $urlRouterProvider) {
             templateUrl: 'loginpage/login.html',
             controller: 'loginctrl'
         })
+        .state('loginsuccess', {
+            url: '/loginsuccess',
+            templateUrl: 'loginpage/loginsuccess.html'
+        })
+        .state('loginfail', {
+            url: '/loginfail',
+            templateUrl: 'loginpage/loginfail.html',
+            controller: 'loginctrl'
+        })
 
 });
 
-routerApp.controller('loginctrl', ['$scope', function($scope) {
-    $scope.a = 30;
-}])
