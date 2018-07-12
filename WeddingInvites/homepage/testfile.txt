@@ -67,3 +67,7 @@ kjjjjjj jjjjjj,1
 jkh,0
 j,1
 kj,0
+sdc,1
+dsss,0
+ssss,0
+kj,0

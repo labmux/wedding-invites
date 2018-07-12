@@ -1,7 +1,7 @@
 <!--<h1>Wedding RSVP</h1>-->
-<div>
-    <menu-name title="Wedding RSVP"></menu-name>
-</div>
+<title>Wedding RSVP</title>
+<menu-name title="Wedding RSVP" {{test}}></menu-name>
+
 <div ng-app="routerApp">
         <!-- NUMBER OF PEOPLE -->
         <p>What is the total amount of people coming?</p>
@@ -47,5 +47,7 @@
         <!-- Tests for dev -->
         <p> List: {{namelist}}</p>
         <p>Response: {{resp}}</p>
+
+    <admin-status></admin-status>
 
 </div>

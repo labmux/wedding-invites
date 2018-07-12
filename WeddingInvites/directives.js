@@ -13,5 +13,12 @@ routerApp.directive('menuName', function() {
         scope: { title: '@' },
         template: '<h1>{{title}}</h1>'
     };
-
 });
+
+routerApp.directive('adminStatus', function() {
+    return {
+        template: '<p style="color: green">{{admin}}</p>'
+    };
+})
+
+//isolate scope

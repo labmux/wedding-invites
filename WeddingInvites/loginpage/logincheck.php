@@ -6,12 +6,16 @@ $realpassword = "admin";
 $username = $_POST['username'];
 $password = $_POST['password'];
 
+$login = 0;
+
 if($realusername == $username && $realpassword == $password)
 {
-    echo '1';
+    $login = 1;
 
 }
 else
 {
-    echo '0';
+    $login = 0;
 }
+
+echo $login;

@@ -20,9 +20,10 @@ routerApp.config(function ($stateProvider, $urlRouterProvider) {
             templateUrl: 'loginpage/login.html',
             controller: 'loginctrl'
         })
-        .state('loginsuccess', {
-            url: '/loginsuccess',
-            templateUrl: 'loginpage/loginsuccess.html'
+        .state('admin', {
+            url: '/admin',
+            templateUrl: 'adminpage/admin.html',
+            controller: 'loginctrl'
         })
         .state('loginfail', {
             url: '/loginfail',
