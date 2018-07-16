@@ -1,0 +1,50 @@
+<!--<h1>Wedding RSVP</h1>-->
+<title>Wedding RSVP</title>
+<menu-name title="Wedding RSVP" {{test}}></menu-name>
+
+<div ng-app="routerApp">
+        <!-- NUMBER OF PEOPLE -->
+        <p>What is the total amount of people coming?</p>
+        <input type="number"
+               placeholder="Select number"
+               ng-model="number">
+
+        <add-space></add-space>
+
+        <!-- PEOPLES NAMES -->
+        <p>Enter full name(s)</p>
+        <p>(Check checkbox if its a child)</p>
+
+        <div ng-repeat="x in num() track by $index">
+            <input type="text"
+                   placeholder="Enter name here"
+                   ng-model="namelist[$index].name">
+            <input type="checkbox"
+                   ng-model="namelist[$index].ischild">
+            <!-- x -->
+            <span class="w3-padding-16"
+                  class="w3-right w3-margin-right"
+                  style="cursor: pointer;"
+                  ng-click="remove($index)">&emsp; &#10060 </span>
+            <p></p>
+        </div>
+
+        <!-- Add namelist & Reset buttons -->
+        <button ng-click="addName()"
+                ng-hide="number<1"
+                class="w3-btn w3-padding w3-green">
+            Add names</button>
+        <button ng-click="reset()"
+                class="w3-btn w3-padding w3-red">
+            Reset</button>
+
+        <!-- Error message -->
+        <p style="color: red">{{errormsg}}</p>
+
+        <!-- Tests for dev -->
+        <p> List: {{namelist}}</p>
+        <p>Response: {{resp}}</p>
+
+    <admin-status></admin-status>
+
+</div>
