@@ -29,4 +29,4 @@ routerApp.controller('loginctrl', function ($scope, $http, $state, Admin) {
     }
 
 
-})
+});
