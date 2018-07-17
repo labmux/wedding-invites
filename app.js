@@ -23,7 +23,7 @@ routerApp.config(function ($stateProvider, $urlRouterProvider) {
         .state('admin', {
             url: '/admin',
             templateUrl: 'adminpage/admin.html',
-            controller: 'loginctrl'
+            controller: 'adminctrl'
         })
         .state('loginfail', {
             url: '/loginfail',

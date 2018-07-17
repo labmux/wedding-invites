@@ -1,10 +1,10 @@
 <?php
 /* DEVELOPER TESTS */
-var_dump($_POST['list']);
+var_dump($_POST["list"]);
 
 //OPEN FILE ang get 'list'
 $myfile = fopen("testfile.txt", "a") or die ("Just die");
-$listout = json_decode($_POST['list'], false);
+$listout = json_decode($_POST["list"], false);
 $str = "";
 
 //Display array nicely

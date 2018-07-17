@@ -24,6 +24,20 @@ routerApp.factory('List', function($http) {
     
     var factory = {};
 
+    factory.getList = function() {
+        $http({
+            method: 'GET',
+            url: 'adminpage/downloadList'
+        }).then(
+            function success(response) {
+                return response.data;
+            },
+            function error(response) {
+                $scope.resp = response.data;
+                $scope.errormsg = response.statusText;
+            }
+        )
+    }
 
 
     return factory;

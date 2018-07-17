@@ -3,6 +3,10 @@
  * Download list from server
  */
 
-fopen('homepage/testfile.txt', 'a') or die ('Decede');
+$myfile = fread("homepage/testfile.txt", "testfile.txt") or die ('Decede');
+
+var_dump(json_encode($myfile));
+var_dump(json_decode($myfile));
+
 
 ?>
