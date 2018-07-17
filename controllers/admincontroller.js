@@ -12,7 +12,7 @@ routerApp.controller('adminctrl', function($scope, $http) {
                 $scope.resp = response.data;
                 $scope.errormsg = "Retrieved list succesfully";
             },
-            function error(response) {dfvdfvd
+            function error(response) {
                 $scope.resp = response.data;
                 $scope.errormsg = response.statusText;
             }
