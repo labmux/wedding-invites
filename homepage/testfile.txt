@@ -13,3 +13,5 @@ m,0
 jbkj,0
 mjbk,0
 m,0
+h,1
+kjh,1
