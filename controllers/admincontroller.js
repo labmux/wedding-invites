@@ -1,21 +1,31 @@
-routerApp.controller('adminctrl', function($scope, $http) {
+routerApp.controller('adminctrl', function($scope, $http, Admin, List) {
 
-    $scope.resp = "";
-    $scope.errormsg = "";
+    $scope.admin = Admin.isAdmin();
+    $scope.status = "";
+    $scope.data = "";
+    $scope.list = "";
+    $scope.display = "";
 
-    $scope.getList = function() {
-        $http({
-            method: 'GET',
-            url: 'adminpage/downloadList'
-        }).then(
+
+    $scope.displayList = function ()
+    {
+        List.getList().then(
             function success(response) {
-                $scope.resp = response.data;
-                $scope.errormsg = "Retrieved list succesfully";
+                $scope.status = response.statusText;
+                $scope.data = response.data;
+
+                $scope.list = JSON.parse($scope.data);
+                $scope.display = List.displayList($scope.list);
             },
             function error(response) {
-                $scope.resp = response.data;
-                $scope.errormsg = response.statusText;
+                $scope.data = response.data;
+                $scope.status = response.statusText;
             }
-        )
+        );
+
+
+
+
+
     }
 });

@@ -2,11 +2,15 @@
 <menu-name title="Confirmation list"></menu-name>
 
 <h3>Would you like to display the list?</h3>
-<input type="button"
-       ng-click="getList()">
 
-<h1>{{resp}}</h1>
-<h1>{{errormsg}}</h1>
+<button type="button"
+       placeholder="Display"
+       ng-click="displayList()">Display
+</button>
+
+<h3>{{display}}</h3>
+
+
 
 
 

@@ -1,4 +1,4 @@
-routerApp.controller('homectrl', function($scope, $http, Admin) {
+routerApp.controller('homectrl', function($scope, $http, Admin, List) {
 
     $scope.admin = Admin.isAdmin();
 
@@ -7,18 +7,15 @@ routerApp.controller('homectrl', function($scope, $http, Admin) {
     $scope.resp = "";
     $scope.number = 1;
 
+    $scope.listt = "";
+
     
     $scope.addName = function() {
         if($scope.namelist.length == $scope.number && $scope.hasEmpty() == false)
         {
             $scope.namelist_string = JSON.stringify($scope.namelist);
 
-            $http({
-                method: 'POST',
-                url: 'homepage/uploadList.php',
-                data: 'list=' + $scope.namelist_string,
-                headers: {'Content-Type': 'application/x-www-form-urlencoded'}
-            }).then(
+            $scope.listt = List.postList($scope.namelist_string).then(
                 function success(response) {
                     $scope.resp = response.data;
                     $scope.errormsg = "Added names succesfully";

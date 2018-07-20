@@ -2,11 +2,16 @@
 /**
  * Download list from server
  */
+$myfile = fopen("../homepage/testfile.txt", "r") or die("Decede");
 
-$myfile = fread("homepage/testfile.txt", "testfile.txt") or die ('Decede');
+$list = fread($myfile, filesize("../homepage/testfile.txt"));
 
-var_dump(json_encode($myfile));
-var_dump(json_decode($myfile));
+//$mylist = json_decode($list, false);
+//$str = "";
+
+echo $list;
+fclose($myfile);
+
 
 
 ?>

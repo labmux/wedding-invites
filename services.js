@@ -24,20 +24,44 @@ routerApp.factory('List', function($http) {
     
     var factory = {};
 
-    factory.getList = function() {
-        $http({
+    factory.getList = function() 
+    {
+        return $http({
             method: 'GET',
-            url: 'adminpage/downloadList'
-        }).then(
-            function success(response) {
-                return response.data;
-            },
-            function error(response) {
-                $scope.resp = response.data;
-                $scope.errormsg = response.statusText;
-            }
-        )
+            url: 'adminpage/downloadList.php'
+        });
     }
+
+    factory.postList = function(namelist)
+    {
+        return $http({
+            method: 'POST',
+            url: 'homepage/uploadList.php',
+            data: 'list=' + namelist,
+            headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+        });
+    }
+
+    factory.displayList = function (list)
+    {
+        var str = "oooo";
+
+        for(var i = 0; i < list.length; i++)
+        {
+            str+="yoo";
+            str += list[i].name + ",";
+
+            if(list[i].ischild === true)
+                str += list[i].ischild;
+            else
+                str += 0 ;
+
+            str += "\r\n";
+        }
+
+        return str;
+    }
+
 
 
     return factory;
