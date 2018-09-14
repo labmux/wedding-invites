@@ -42,6 +42,17 @@ routerApp.factory('List', function($http) {
         });
     }
 
+    factory.removeName = function (index)
+    {
+        return $http({
+            method: 'POST',
+            url: 'uploadList.php',
+            data: 'index=' + index,
+            headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+        });
+
+    }
+    /*
     factory.displayList = function (list)
     {
         var str = "oooo";
@@ -56,11 +67,11 @@ routerApp.factory('List', function($http) {
             else
                 str += 0 ;
 
-            str += "\r\n";
+            str += "<br>";
         }
 
         return str;
-    }
+    }*/
 
 
 

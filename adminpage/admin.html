@@ -1,3 +1,13 @@
+<style>
+    table {
+        border-collapse: collapse;
+    }
+
+    table, td, th {
+        border: 1px solid black;
+    }
+</style>
+
 <title>Admin page</title>
 <menu-name title="Confirmation list"></menu-name>
 
@@ -8,7 +18,27 @@
        ng-click="displayList()">Display
 </button>
 
+
+
 <h3>{{display}}</h3>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Is a Child</th>
+    </tr>
+    <tr ng-repeat="item in list track by $index">
+        <td>{{list[$index].name}}</td>
+        <td>{{list[$index].ischild}}</td>
+        <!-- x -->
+        <td class="w3-padding-16"
+              class="w3-right w3-margin-right"
+              style="cursor: pointer;"
+              ng-click="remove($index)">&emsp; &#10060
+            </td>
+    </tr>
+</table>
+
+
 
 
 

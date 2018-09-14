@@ -3,37 +3,30 @@
 var_dump($_POST["list"]);
 
 //OPEN FILE ang get 'list'
-$myfile = fopen("testfile.txt", "r+") or die ("Just die");
+$myfile = fopen("textfile.txt", "r+") or die ("Just die");
 
-$oglist = fread($myfile, filesize("testfile.txt"));
-$list = $_POST["list"];
+//get original list and updated list
+$oglist = fread($myfile, filesize("textfile.txt"));
+$updatedList = $_POST["list"];
 
-if (empty($oglist)) {
-    $jsonoglist = array();
-} else
-    $jsonoglist = json_decode($oglist);
-$jsonlist = json_decode($list);
+//decode lists, if empty create it to avoid errors
+if (empty($oglist))
+{
+    $jsonOglist = array();
+}
+else
+    $jsonOglist = json_decode($oglist);
 
-$jsonoglist = array_merge($jsonoglist, $jsonlist);
+$jsonlist = json_decode($updatedList);
 
-$oglist = json_encode($jsonoglist);
+//merge updated list to old list
+$jsonOglist = array_merge($jsonOglist, $jsonlist);
 
-//Display array nicely
-//for($i = 0; $i < count($listout); $i++)
-//{
-//    $str .= $listout[$i]->name . ",";
-//    if($listout[$i]->ischild == 1)
-//         $str .= $listout[$i]->ischild .";";
-//    else
-//        $str .= 0 .";";
-//
-//    $str .= "\r\n";
-//}
+//encode the list back
+$oglist = json_encode($jsonOglist);
 
 //WRITE TO TEXT
-//fwrite($myfile, $oglist);
-file_put_contents("testfile.txt", "$oglist", FILE_USE_INCLUDE_PATH);
+file_put_contents("textfile.txt", "$oglist", FILE_USE_INCLUDE_PATH);
 fclose($myfile);
-
 ?>
 
